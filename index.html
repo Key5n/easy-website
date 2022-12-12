@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head prefix="og: http://ogp.me/ns#">
+    <meta charset="utf-8" />
+    <meta name="keywords" content="c0de,名古屋工業大学,名工大" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="名古屋工業大学課外活動団体C0de部の公式ホームページです。"
+    />
+    <meta name="robots" content="index,nofollow" />
+    <title>名古屋工業大学C0de部</title>
+    <!-- reset cssの読み込み。これは本体cssファイルよりも先に読み込む必要がある -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/destyle.css@1.0.5/destyle.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- Google Fontを使ったフォントの読み込み -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Noto+Sans+JP&family=Noto+Serif+JP&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- headタグ内でdefer属性が付いたscriptタグがあるとウェブページを高速に読み込むことができる。 -->
+    <script src="./main.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="title">切り替えできるよ</h1>
+    </header>
+    <main>
+      <div class="content">
+        <div class="explanation-with-image" id="home">
+          予約完了画面
+          <img src="./images/home.png" alt="アプリのホーム画像" width="200px" />
+        </div>
+        <div
+          class="explanation-with-image explanation-with-image__map"
+          id="map"
+        >
+          マップ画面
+          <img src="./images/map.png" alt="アプリのマップ画像" width="200px" />
+        </div>
+      </div>
+      <button class="main__button" id="switch-button">切り替え</button>
+    </main>
+  </body>
+</html>
