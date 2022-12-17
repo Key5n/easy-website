@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Noto+Sans+JP&family=Noto+Serif+JP&display=swap");
+.title {
+  font-size: 2.5rem;
+  font-family: "Noto Serif JP", serif;
+}
+
+.header {
+  /* 上下に2rem, 左右に0pxだけ間隔をとる */
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+
+  /* フレックスボックス(flexbox)が決まっていないと使えない文 */
+  justify-content: space-around;
+}
+
+.explanation-with-image {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 1.25rem;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+/* マップ画像は最初画面に表示しない
+あとからjs書き換えて表示する */
+.explanation-with-image__map {
+  display: none;
+}
+
+.main__button {
+  display: block;
+  margin: 0 auto;
+  margin-top: 1rem;
+  background-color: #ff9a62;
+  font-family: "Noto Serif JP", serif;
+  color: white;
+  font-size: 1.25rem;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transition: ease-in-out 0.2s;
+}
+
+.main__button:hover {
+  background-color: #c96e3d;
+}
+
+.comment {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 1.25rem;
+  font-family: "Noto Sans JP", sans-serif;
+}

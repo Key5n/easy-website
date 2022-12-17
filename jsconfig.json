@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    // es6にコンパイル
+    "target": "ES6",
+    // 型チェックあり
+    "checkJs": true,
+    // 構文チェックを厳しく
+    "strict": true,
+    // commonJS方式でmoduleを処理
+    "module": "CommonJS",
+    "baseUrl": "./src"
+  },
+  "exclude": ["node_modules", "dist"]
+}
